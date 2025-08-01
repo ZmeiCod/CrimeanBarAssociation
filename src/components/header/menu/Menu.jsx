@@ -6,10 +6,9 @@ import CloseIcon from "./../../../assets/icons/closeIcon.svg";
 import "./../../../css/components/header/menu/Menu.css";
 
 const menuItems = [
-  { label: "Strona Główna", id: "home"},
-  { label: "Misja", id: "mission" },
+  { label: "Главная", id: "home"},
   {
-    label: "Czym się zajmuję?",
+    label: "Специализация",
     id: "expertise",
     expandable: true,
   },

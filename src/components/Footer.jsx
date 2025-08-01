@@ -8,63 +8,39 @@ export default function Footer() {
       <div className="footerContent">
         <div className="footerSection footerInfo">
           <img className="footerLogo" src={Logo} alt="Logo kancelarii" />
-          <p className="footerDescription">
+          {/* <p className="footerDescription">
             Świadczę usługi prawne w biurze oraz zdalnie, dostosowując się do
             potrzeb klientów w całym kraju.
-          </p>
+          </p> */}
         </div>
 
         <div className="footerSection footerContact">
-          <h3 className="footerHeading">Dane kontaktowe</h3>
+          <h3 className="footerHeading">Контактная информация</h3>
           <address className="footerAddress">
             <p>
-              E-mail: <a href="mailto:martyna@gmail.com">martyna@gmail.com</a>
+              Почта: <a href="mailto:martyna@gmail.com">nd-crimea@mail.ru</a>
             </p>
             <p>
-              Telefon: <a href="tel:+123456789">(+48)123456789</a>
-            </p>
-            <p>
-              LinkedIn:{" "}
-              <a
-                href="https://linkedin.com/martynaw"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                linkedin.com/martynaw
-              </a>
+              Телефон: <a href="tel:+123456789">+7(978)123-45-67</a>
             </p>
           </address>
         </div>
 
         <div className="footerSection footerSpecialties">
-          <h3 className="footerHeading">Obszary specjalizacji</h3>
+          <h3 className="footerHeading">Дополнительны ссылки</h3>
           <nav aria-label="Obszary specjalizacji">
             <ul className="footerLinks">
               <li>
-                <Link to="/prawo-cywilne">Prawo Cywilne</Link>
+                <Link to="/prawo-cywilne">Адвокатская палата РК</Link>
               </li>
-              <li>
-                <Link to="/prawo-rodzinne">Prawo Rodzinne</Link>
-              </li>
-              <li>
-                <Link to="/prawo-gospodarcze">Prawo Gospodarcze</Link>
-              </li>
-              <li>
-                <Link to="/prawo-pracy">Prawo Pracy</Link>
-              </li>
-              <li>
-                <Link to="/prawo-nieruchomosci">Prawo Nieruchomości</Link>
-              </li>
-              <li>
-                <Link to="/prawo-danych">Prawo Ochrony Danych Osobowych</Link>
-              </li>
+              
             </ul>
           </nav>
         </div>
       </div>
 
       <div className="footerBottom">
-        <p className="footerCredit">Designed and Coded by Laura Głąb</p>
+        <p className="footerCredit">Разработано ZGroup</p>
       </div>
     </footer>
   );

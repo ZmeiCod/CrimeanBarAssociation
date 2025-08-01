@@ -24,7 +24,12 @@ export default function Contact() {
 
   const onSubmit = (data) => {
     emailjs
-      .sendForm("service_wdcomuz", "template_wwlr8mk", data, "7qkJteyD1v-6jOfq4")
+      .sendForm(
+        "service_wdcomuz",
+        "template_wwlr8mk",
+        data,
+        "7qkJteyD1v-6jOfq4"
+      )
       .then((result) => console.log(result.text))
       .catch((error) => console.log(error.text));
     reset();
@@ -46,7 +51,7 @@ export default function Contact() {
             viewport={{ once: true }}
           >
             <h1 id="contact-heading" className="contactTitle subheading">
-              Kontakt
+              Контакты
             </h1>
           </motion.div>
 
@@ -58,8 +63,8 @@ export default function Contact() {
             viewport={{ once: true }}
           >
             <h4 className="contactSubTitle">
-              Zaufaj doświadczeniu i skontaktuj się, aby uzyskać profesjonalną
-              pomoc prawną dostosowaną do Twoich potrzeb.
+              Отправьте нам заявку, чтобы согласовать консультацию и вести
+              работу в удаленном режиме .
             </h4>
           </motion.div>
 
@@ -81,14 +86,14 @@ export default function Contact() {
               id="name"
               className="inputField"
               {...register("name")}
-              placeholder="Twoje Imię *"
+              placeholder="Ваше имя *"
               aria-invalid={errors.name ? "true" : "false"}
               aria-describedby={errors.name ? "name-error" : undefined}
             />
             <div className="errorWrapper">
               {errors.name && (
                 <p id="name-error" className="errorText">
-                  Imię musi zawierać co najmniej 3 znaki.
+                  Минимум 3 символа{" "}
                 </p>
               )}
             </div>
@@ -96,14 +101,14 @@ export default function Contact() {
               id="email"
               className="inputField"
               {...register("email")}
-              placeholder="Twój E-mail *"
+              placeholder="Ваш E-mail *"
               aria-invalid={errors.email ? "true" : "false"}
               aria-describedby={errors.email ? "email-error" : undefined}
             />
             <div className="errorWrapper">
               {errors.email && (
                 <p id="email-error" className="errorText">
-                  Niepoprawny e-mail.
+                  Некоректный e-mail.
                 </p>
               )}
             </div>
@@ -111,14 +116,14 @@ export default function Contact() {
               id="message"
               className="inputField"
               {...register("message")}
-              placeholder="Wiadomość *"
+              placeholder="Описание ситуации *"
               aria-invalid={errors.message ? "true" : "false"}
               aria-describedby={errors.message ? "message-error" : undefined}
             ></textarea>
             <div className="errorWrapper">
               {errors.message && (
                 <p id="message-error" className="errorText">
-                  Wiadomość powinna zawierać co najmniej 10 znaków.
+                  Не информативно. Миниум 10 знаков
                 </p>
               )}
             </div>
@@ -127,7 +132,7 @@ export default function Contact() {
               <input
                 className="submitBtn"
                 type="submit"
-                value="Wyślij wiadomość"
+                value="Отправить"
                 aria-label="Wyślij formularz kontaktowy"
               />
             </div>

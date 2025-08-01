@@ -26,6 +26,12 @@ export default function NavSection({
       </nav>
       {showLogo && (
         <div role="img" aria-label="Logo kancelarii">
+          {/* <div>
+            <h1>
+              Ассоциаяция "Крымская коллегия адвокатов - Трушляков, Панченко и
+              партнеры"
+            </h1>
+          </div> */}
           <LogoSection />
         </div>
       )}
