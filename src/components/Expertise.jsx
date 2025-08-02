@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import civilIcon from "./../../assets/icons/civilIcon.svg";
-import economIcon from "./../../assets/icons/economicIcon.svg";
-import estateIcon from "./../../assets/icons/estateIcon.svg";
-import familyIcon from "./../../assets/icons/familyIcon.svg";
-import jobIcon from "./../../assets/icons/jobIcon.svg";
-import dataIcon from "./../../assets/icons/personaldataIcon.svg";
-import "./../../css/sections/homepage/Expertise.css";
+import civilIcon from "./../assets/icons/civilIcon.svg";
+import economIcon from "./../assets/icons/economicIcon.svg";
+import estateIcon from "./../assets/icons/estateIcon.svg";
+import familyIcon from "./../assets/icons/familyIcon.svg";
+import jobIcon from "./../assets/icons/jobIcon.svg";
+import dataIcon from "./../assets/icons/personaldataIcon.svg";
+import "./../css/sections/homepage/Expertise.css";
 
 export default function Expertise() {
   return (

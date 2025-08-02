@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Header from "../../../components/header/Header.jsx";
-import "./../../../css/sections/homepage/hero/Hero.css";
+import Header from "../header/Header.jsx";
+import "./../../css/sections/homepage/hero/Hero.css";
 
 export default function Hero() {
   const [showMenu, setShowMenu] = useState(false);

@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import emailjs from "@emailjs/browser";
-import "./../../css/sections/homepage/Contact.css";
+import '../css/sections/homepage/Contact.css'
 
 const userSchema = z.object({
   name: z.string().min(3).max(50),
