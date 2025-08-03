@@ -33,6 +33,21 @@ body {
   position: relative;
 }
 
+
+.heroWrapper {
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+}
+
+.main {
+  height: 100%;
+  padding-top: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+
 .app {
   position: relative;
   display: block;

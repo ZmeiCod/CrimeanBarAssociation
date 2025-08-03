@@ -13,7 +13,7 @@
 @media (min-width: 1024px) {
   .infoBar {
     background-color: var(--background);
-    box-shadow: 0.1rem 1rem 3rem 0.15rem var(--black); 
+    box-shadow: 0.1rem 1rem 3rem 0.15rem var(--black);
     color: var(--gold);
     display: flex;
     flex-direction: row;
@@ -26,7 +26,7 @@
     z-index: 99999;
   }
 
-  .infoSection{
+  .infoSection {
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -42,7 +42,7 @@
     align-items: center;
     background-color: var(--gold);
     border: none;
-    color: var(--white);  
+    color: var(--white);
     column-gap: 0.3125rem;
     cursor: pointer;
     display: flex;
@@ -56,11 +56,10 @@
     text-transform: uppercase;
   }
 
-  .bubble{
-    fill: var(--white)
+  .bubble {
+    fill: var(--white);
   }
 }
 
 @media (prefers-color-scheme: dark) {
-    
 }
